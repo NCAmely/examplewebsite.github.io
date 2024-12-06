@@ -8,7 +8,6 @@
         window.alert("Alert displayed");
       }
       function send_email() {
-window.alert("Email process initiated");
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
@@ -33,7 +32,6 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
-window.alert("Email Sent");
 }
     </script>
     <link rel="stylesheet" type="text/css" href="styles.css">
